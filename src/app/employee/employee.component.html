@@ -1,0 +1,24 @@
+<h1>Employee works:</h1>
+<!-- <p *ngfor="let e of empList"></p> -->
+<table class="stud">
+    
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Ename</th>
+            <th>Age</th>
+            <th>phone</th>
+            <th>place</th>
+        </tr>
+    </thead>
+
+    <tbody *ngFor="let e of empList" (click)="list(e.id)">
+        <tr>
+            <td>{{e.id}}</td>
+            <td>{{e.Ename}}</td>
+            <td>{{e.age}}</td>
+            <td>{{e.phone}}</td>
+            <td>{{e.place}}</td>
+        </tr>
+    </tbody>
+</table>

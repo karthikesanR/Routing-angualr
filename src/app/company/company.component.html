@@ -1,0 +1,23 @@
+<h1>Company works:</h1>
+<table class="stud">
+    
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Company</th>
+            <th>since</th>
+            <th>place</th>
+            <th>address</th>
+        </tr>
+    </thead>
+
+    <tbody *ngFor="let e of comList" (click)="list1(e.id)">
+        <tr>
+            <td>{{e.id}}</td>
+            <td>{{e.Companyname}}</td>
+            <td>{{e.since}}</td>
+            <td>{{e.place}}</td>
+            <td>{{e.address}}</td>
+        </tr>
+    </tbody>
+</table>

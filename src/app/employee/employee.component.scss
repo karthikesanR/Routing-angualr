@@ -1,0 +1,32 @@
+// Define styles for the table
+.stud {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+// Define styles for table header
+.stud thead th {
+  background-color:antiquewhite;
+  border: 1px solid #dddddd;
+  padding: 8px;
+  text-align: left;
+  color: #333; /* Added headline color */
+}
+
+// Define styles for table body
+.stud tbody td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+// Define styles for alternate rows
+.stud tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+// Define hover styles for rows
+.stud tbody tr:hover {
+  background-color: #e6e6e6;
+  cursor: pointer; /* Added hover effect with hand symbol */
+}
+
